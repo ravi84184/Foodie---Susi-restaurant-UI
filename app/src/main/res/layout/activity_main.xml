@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_dots_menu" />
+
+            <com.nikdemo.foodie_susi_restorentui.customui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_icon"
+                android:text="Menu"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_8ssp"
+                app:fontName="@string/font_titillium_regular" />
+
+            <ImageView
+                android:id="@+id/menu_cart"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_shopping_cart" />
+
+            <com.nikdemo.foodie_susi_restorentui.customui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_cart"
+                android:layout_alignParentEnd="true"
+                android:text="Cart"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_8ssp"
+                app:fontName="@string/font_titillium_regular" />
+        </RelativeLayout>
+
+        <com.nikdemo.foodie_susi_restorentui.customui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Hello,\nYummy evening"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_24ssp"
+            app:fontName="@string/font_titillium_bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/search_bg">
+
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:tint="@color/pinkLight" />
+
+            <com.nikdemo.foodie_susi_restorentui.customui.CustomEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/icon_search"
+                android:background="@android:color/transparent"
+                android:hint="Hello,Yummy evening"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/pinkLight"
+                android:textSize="@dimen/_16ssp"
+                app:fontName="@string/font_titillium_bold" />
+
+            <ImageView
+                android:id="@+id/icon_"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:tint="@color/pinkLight" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/search_bg"
+        android:backgroundTint="@color/pinkLight2"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@color/pink" />
+
+        <com.nikdemo.foodie_susi_restorentui.customui.CustomTextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:text="Popular Brand"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_16ssp"
+            app:fontName="@string/font_titillium_bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            android:tint="@color/pink" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:outlineSpotShadowColor="@color/pink"
+            app:cardCornerRadius="@dimen/_40sdp"
+            app:cardElevation="@dimen/_10sdp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/ph" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:outlineSpotShadowColor="@color/pink"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:cardElevation="@dimen/_3sdp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <com.nikdemo.foodie_susi_restorentui.customui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/rating"
+                    android:layout_centerHorizontal="true"
+                    android:text="Pizza Hut"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_16ssp"
+                    app:fontName="@string/font_titillium_bold" />
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:rating="3.5" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>
